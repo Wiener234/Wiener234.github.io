@@ -91,6 +91,10 @@ nav li a:hover{
 
 /* FEATURES*/
 
+.feature{
+    height: 800px;
+}
+
 /* Directions */
 
 .directions_feature-box{
@@ -157,6 +161,7 @@ nav li a:hover{
 footer{
     background: black;
     padding: 10px 20px;
+    font-size: 12px;
 }
 
 
