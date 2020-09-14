@@ -17,6 +17,7 @@ header{
     background-image: url("pictures/hintergrundsteg1.png");
     background-size: 100%;
     background-position: bottom;
+    
 }
 
 header .mobile{
@@ -76,6 +77,19 @@ nav li a:hover{
 /* RESPONSIVE RULES */
 
 @media screen and (max-width: 523px){
+    header{
+        height: 200px;
+    }
+
+    header .mobile {
+        display: inline-block;
+    }
+
+    header .desktop {
+        display: none;
+    }
+}
+@media screen and (max-width: 765px){
     header{
         height: 200px;
     }
@@ -159,7 +173,7 @@ nav li a:hover{
 }
 
 .stayalive{
-    width: 30%;
+    width: 400px;
     height: auto;
     box-shadow: gray 0 0 10px;
 }
