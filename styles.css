@@ -149,6 +149,25 @@ nav li a:hover{
     width: 200px;
 }
 
+.picture{
+    list-style-type: none;
+    
+}
+
+.img{
+    box-shadow: gray 0 0 10px;
+}
+
+.stayalive{
+    width: 30%;
+    height: auto;
+    box-shadow: gray 0 0 10px;
+}
+
+.text{
+    padding: 10px;
+}
+
 
 
 
