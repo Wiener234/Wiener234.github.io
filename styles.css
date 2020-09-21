@@ -96,7 +96,13 @@ nav li a:hover{
 
 /* RESPONSIVE RULES */
 
-@media screen and (max-width: 523px){
+
+
+
+
+
+
+@media screen and (max-width: 765px){
     header{
         height: 200px;
     }
@@ -109,9 +115,10 @@ nav li a:hover{
         display: none;
     }
 }
-@media screen and (max-width: 765px){
+
+@media screen and (max-width: 400px){
     header{
-        height: 200px;
+        height: 181px;
     }
 
     header .mobile {
@@ -120,6 +127,9 @@ nav li a:hover{
 
     header .desktop {
         display: none;
+    }
+    li {
+        font-size: 24px;
     }
 }
 
