@@ -136,7 +136,7 @@ nav li a:hover{
 /* FEATURES*/
 
 .feature{
-    height: 800px;
+    height: 1900px;
 }
 
 /* Directions */
@@ -203,6 +203,12 @@ nav li a:hover{
 }
 
 .stayalive{
+    width: 400px;
+    height: auto;
+    box-shadow: gray 0 0 10px;
+}
+
+.getthedot{
     width: 400px;
     height: auto;
     box-shadow: gray 0 0 10px;
