@@ -46,7 +46,7 @@ li:first-child{
 } 
 
 header .logo a{
-    color: black;
+    
     background-image: url("pictures/logo.PNG");
     background-size: 50px;
     background-repeat: no-repeat;
@@ -151,6 +151,14 @@ figure figcaption{
 .features figure{
     text-align: center;
     margin: auto;
+}
+
+footer{
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
 }
 
 @media screen and (max-width: 300px){
