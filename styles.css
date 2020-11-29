@@ -1,0 +1,242 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(48, 48, 48);
+    margin: 0;
+    padding: 0;
+    color:  aliceblue;
+}
+
+.topheader{
+    display: block;
+    background-color: black;
+    
+    
+}
+
+header{
+    display: block;
+}
+
+.topnav{
+    list-style: none;
+    margin: 0 10px 75px 0;
+    padding: 25px 0 25px 0;
+    text-align: right;
+}
+
+li{
+    display: inline-block;
+    padding-right: 2%;
+    
+}
+
+ul{
+    padding: 0;
+}
+
+li:first-child{
+    float: left;
+} 
+
+header .logo a{
+    color: black;
+    background-image: url("pictures/logo.PNG");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    height:50px;
+    text-indent: -99999999999999px;
+    width: 50px;
+    top: -15px;
+    left: 10px;
+    border-radius: 50%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+section{
+    text-align: center;
+    padding: 8%;
+}
+
+section header{
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+section div{
+    font-size:  16px;
+    line-height: 25px;
+}
+
+.par{
+    margin-top: 650px;
+    height: 450px;
+}
+
+.mybutton{
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #151D21;
+    background: #249cd4;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 10px;   
+}
+
+.link{
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.link:hover{
+    opacity: 0.8;
+}
+
+.contact_img{
+    height: 50px;
+}
+
+.contact_img:hover{
+    opacity: 0.8;
+}
+
+.game_img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.game_img:hover{
+    opacity: 0.8;
+}
+
+figure{
+    margin-top: 0px;
+}
+
+figure figcaption{
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.features{
+    
+    color: gray;
+    padding: 20px;
+    display: block;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.features figure{
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 300px){
+    a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 765px){
+    .features{
+        display: flex;   
+    }
+    
+    .features .game_img{
+        height: 200px;
+        width: 200px;
+    }
+    section div{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .link{
+        font-size: 32px;
+    }
+    section header{
+        font-size: 50px;
+    }
+    a{
+        font-size: 32px;
+    }
+    .mybutton{
+        font-size: 32px;
+    }
+
+    .topheader{
+        height: 100px;
+    }
+
+    header .logo a{
+        background-size: 75px;
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media screen and (min-width: 1249px){
+    .features{
+        display: flex;   
+    }
+    
+    .features .game_img{
+        height: 300px;
+        width: 300px;
+    }
+    section div{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .link{
+        font-size: 40px;
+    }
+    section header{
+        font-size: 56px;
+    }
+    a{
+        font-size: 42px;
+    }
+    .mybutton{
+        font-size: 40px;
+    }
+
+    .topheader{
+        height: 125px;
+    }
+
+    .topnav{
+        padding: 40px 0 25px 0;
+    }
+
+    header .logo a{
+        background-size: 100px;
+        height: 100px;
+        width: 100px;
+        top: -27.5px;
+    }
+}
+
+
+
