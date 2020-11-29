@@ -1,60 +1,25 @@
 body{
-    background: white;
-    color:black;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: rgb(48, 48, 48);
+    color: white;
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
     margin: 0;
-    padding:0;
-
+    padding: 0;
 }
 
-/* HEADER */
 header{
-    height: 400px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
     background: black;
-    background-image: url("pictures/hintergrundsteg1.png");
-    background-size: 100%;
-    background-position: bottom;
-    
-}
-
-header .mobile{
-    display: none;
-}
-
-header h1 {
-   color:  white;
-   text-transform: uppercase;  
-}
-
-header .logo a{
-    color: black;
-    background-image: url("pictures/delfin.PNG");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-    height:90px;
-    text-indent: -99999999999999px;
-    top: 0px;
-    width: 100px;
-    
-    
+    height: 100px;
+    padding: 0;
+    margin: 0;
     
     
 }
 
 nav ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    text-align: right;
+    list-style-type: none;
+    margin: 20px 20px 0 0;
+    padding: 0;
+    float: right;
     
     
     
@@ -65,10 +30,6 @@ nav ul {
 
 nav ul li{
     display: inline-block;
-    padding-right: 7%;
-    margin: 10px 0 0 0;
-    font-size: 36px;
-    
     
     
     
@@ -83,161 +44,14 @@ nav ul li a{
     
 }
 
-nav li:hover{
-    opacity: 0.8;
-}
-
-nav li a{
-    text-decoration: none;
-}
-nav li a:hover{
-    text-decoration: underline;
-}
-
-/* RESPONSIVE RULES */
-
-
-
-
-
-
-
-@media screen and (max-width: 765px){
-    header{
-        height: 200px;
-    }
-
-    header .mobile {
-        display: inline-block;
-    }
-
-    header .desktop {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 400px){
-    header{
-        height: 181px;
-    }
-
-    header .mobile {
-        display: inline-block;
-    }
-
-    header .desktop {
-        display: none;
-    }
-    li {
-        font-size: 24px;
-    }
-}
-
-/* FEATURES*/
-
-.feature{
-    height: 1900px;
-}
-
-/* Directions */
-
-.directions_feature-box{
-    background: white;
-    padding: 20px;
-}
-
-.directions_feature-box.table{
-    color: grey; 
-    display: flex;
-    flex-direction: row;
-}
-.directions_feature-box.lowersection{
-    color: grey;
-    display: flex;
-    flex-direction: row;
-}
-.directions_feature-box.table div{
-    background: purple;
-    margin: auto;
+.stay-alive img {
+    
     width: 100px;
+}
+
+
+.stay-alive a{
     
 }
-
-.directions_feature-box.lowersection p{
-    color: green;
-    margin: 0;
-    padding: 0;
-}
-
-/* index */
-
-.feature{
-    background: white;
-    color: rgb(75, 74, 74);
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-.feature figure{
-    text-align: center;
-    margin: auto;
-    width: 200px;
-    text-transform: uppercase;
-}
-
-.feature figure img{
-    border-radius: 50%;
-    box-shadow: gray 0 0 10px;
-    border: 1px white solid;
-    width: 200px;
-}
-
-.picture{
-    list-style-type: none;
-    
-}
-
-.img{
-    box-shadow: gray 0 0 10px;
-}
-
-.stayalive{
-    width: 400px;
-    height: auto;
-    box-shadow: gray 0 0 10px;
-}
-
-.getthedot{
-    width: 400px;
-    height: auto;
-    box-shadow: gray 0 0 10px;
-}
-
-.text{
-    padding: 10px;
-}
-
-.Game{
-    padding: 35%;
-}
-
-.oneplayerpong{
-    height: 400px;
-}
-
-
-
-
-
-
-
-/* FOOTER */
-footer{
-    background: black;
-    padding: 10px 20px;
-    font-size: 12px;
-}
-
 
 
