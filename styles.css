@@ -221,6 +221,7 @@ footer{
 
 @media screen and (min-width: 875px){
     .pongGame{
+        margin-top: 50px;
         display: block;
     }
 }
