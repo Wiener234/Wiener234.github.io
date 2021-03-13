@@ -145,6 +145,8 @@ figure figcaption{
     display: block;
     flex-direction: row;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -161,10 +163,22 @@ footer{
     bottom: 0pt;
 }
 
+
+.pongGame{
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+    display: none;
+
+}
+
+
 @media screen and (max-width: 300px){
     a{
         font-size: 20px;
     }
+    
 }
 
 @media screen and (min-width: 765px){
@@ -201,6 +215,13 @@ footer{
         background-size: 75px;
         height: 75px;
         width: 75px;
+    }
+    
+}
+
+@media screen and (min-width: 875px){
+    .pongGame{
+        display: block;
     }
 }
 
@@ -244,7 +265,50 @@ footer{
         width: 100px;
         top: -27.5px;
     }
+    
 }
+
+
+
+
+
+
+
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top:  50px;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+
+    background-color:  black;
+
+    position: relative;
+    top: 150px;
+
+    
+}
+
+.jump{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump{
+    0%{ top: 150px;}
+    30%{ top: 115px;}
+    50%{ top: 80px;}
+    30%{ top: 115px;}
+    0%{ top: 150px;}
+}
+
+
+
+
 
 
 
