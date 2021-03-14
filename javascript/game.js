@@ -182,7 +182,7 @@ function Update(){
     }
     
 
-    if(ballCenterX <= paddle1X + paddleWidth + 5){
+    if(ballCenterX - ballRadius <= paddle1X + paddleWidth + 5){
         if(ballCenterY + ballRadius + 1 > paddle1Y && ballCenterY - (ballRadius + 1) < paddle1Y + PADDLE_HEIGHT){
             ballSpeedX = -ballSpeedX
             if(firstCollision == false){
@@ -198,7 +198,7 @@ function Update(){
         
     }
 
-    if(ballCenterX >= canvas.width - ((paddle2X * 2) + 5)){
+    if(ballCenterX >= canvas.width - ((paddle2X + paddleWidth *2))){
         if(ballCenterY + ballRadius + 1 > paddle2Y && ballCenterY - (ballRadius + 1)< paddle2Y + PADDLE_HEIGHT){
             ballSpeedX = -ballSpeedX
 
