@@ -7,7 +7,8 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@astrojs/mdx": "latest",
@@ -19,6 +20,7 @@
         "astro-expressive-code": "latest",
         "astro-i18n-aut": "latest",
         "astro-purgecss": "latest",
+        "gh-pages": "^6.1.1",
         "lodash": "latest",
         "luxon": "latest",
         "markdown-it": "latest",

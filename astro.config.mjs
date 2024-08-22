@@ -31,7 +31,7 @@ export default defineConfig({
         plugins: [yaml()],
     },
     prefetch: true,
-    site,
+    site: 'https://wiener234.github.io',
     scopedStyleStrategy: 'class',
     trailingSlash: 'always',
     build: {
