@@ -1,4 +1,3 @@
-import zh from '../locales/zh.yml'
 import en from '../locales/en.yml'
 import get from 'lodash/get'
 import { PandaConfig } from '../config.js'
@@ -9,7 +8,7 @@ const { defaultLocale } = PandaConfig
 // This is a simple i18n implementation
 const useLocalePath = (lang: string) => {
     lang ??= ''
-    if (lang === 'zh') {
+    if (lang === 'en') {
         lang = ''
     }
     lang = '' // force to default language
@@ -22,9 +21,9 @@ const useLocalePath = (lang: string) => {
 }
 
 const useTranslation = (lang: string) => {
-    if (!lang) lang = 'zh'
+    if (!lang) lang = 'en'
     return (key: string) => {
-        const data = lang === 'zh' ? [zh, en] : [en, zh]
+        const data = lang === 'en' ? [en] : [en]
         const r = get(data[0], key)
         if (!r) {
             console.warn(`Translation for "${key}" not found`)

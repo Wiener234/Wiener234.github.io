@@ -43,6 +43,12 @@ function getTitle(post) {
     if (!enTitle) return post.title
     return enTitle
 }
+function getDesc(post) {
+    if (!locale || locale === 'zh') return post.description
+    const enDesc = post['title-en']
+    if (!enDesc) return post.description
+    return enDesc
+}
 ---
 
 <Layout title={t('nav.posts')}>
@@ -51,17 +57,23 @@ function getTitle(post) {
             result.map((yearItem) => {
                 return (
                     <>
-                        <div class="text-2xl font-bold italic my-3">{yearItem.year}</div>
+                        <!-- <div class="text-2xl font-bold italic my-3">{yearItem.year}</div> -->
                         <ul class="px-2">
                             {yearItem.list.map((post: any) => {
                                 return (
-                                    <li class="my-1 flex  transition-all duration-300">
-                                        <span style={{ flex: '0 0 5rem' }}>
-                                            <time class="mr-2">{formatDateMD(post.pubDate)}</time>
-                                        </span>
+                                    <li class="my-6 flex flex-col transition-all duration-300">
                                         <a rel="prefetch-intent"  href={path(post.url)}  class="panda-link-static">
                                             {getTitle(post)}
                                         </a>
+                                        <div class="flex opacity-80 items-center space-x-2">
+                                            <svg style="fill: rgb(var(--color-text-body));" xmlns="http://www.w3.org/2000/svg" class="inline-block fill-skin-base h-6 min-w-[1.375rem] scale-80 w-6" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg>
+                                        <span class="italic ml-2">
+                                            <time class="">{formatDateMD(post.pubDate)}</time>
+                                            </span>
+                                        </div>
+                                        <span class="my-1">
+                                            {getDesc(post)}
+                                        </span>
                                     </li>
                                 )
                             })}
@@ -71,19 +83,19 @@ function getTitle(post) {
             })
         }
 
-        <div class="mt-6">
-            {
-                [...tags].map((tag) => {
-                    return (
-                        <a
-                            class="mr-1 text-sm panda-link my-1 hover:font-bold"
-                            href={'/tags/' + slugifySpace(tag) + '/'}
-                        >
-                            #{t('tags.' + tag)}
-                        </a>
-                    )
-                })
-            }
-        </div>
+        <!-- <div class="mt-6"> -->
+            <!-- { -->
+                <!-- [...tags].map((tag) => { -->
+                    <!-- return ( -->
+                        <!-- <a -->
+                            <!-- class="mr-1 text-sm panda-link my-1 hover:font-bold" -->
+                            <!-- href={'/tags/' + slugifySpace(tag) + '/'} -->
+                        <!-- > -->
+                            <!-- #{t('tags.' + tag)} -->
+                        <!-- </a> -->
+                    <!-- ) -->
+                <!-- }) -->
+            <!-- } -->
+        <!-- </div> -->
     </main>
 </Layout>

@@ -32,10 +32,10 @@ const fullTitle = `${title} - ${defaultTitle}`
         <meta name="description" content={description} />
         <title>{fullTitle}</title>
     </head>
-    <body class="max-width dark:bg-stone-700">
+    <body class="max-width dark:bg-stone-700 flex flex-col h-screen">
         <Header />
         { navbar && <Navbar />}
-        <main >
+        <main class="flex-grow">
             <slot />
         </main>
         <Footer />

@@ -4,7 +4,7 @@ description: ""
 pubDate: 2024-04-23
 tags: ['markdown','example']
 categories: ['tech']
-draft: true
+draft: false
 ---
 
 ## li
