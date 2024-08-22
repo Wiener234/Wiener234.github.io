@@ -9,7 +9,7 @@ export const PandaConfig = {
         { title: 'about', url: '/about/' }
     ],
     footer: [
-        { title: 'rss', url: '/rss.xml/' },
+        { title: 'rss', url: '/rss.xml' },
         // { title: 'contact', url: 'https://github.com/yuhangch/astro-theme-panda/issues/new' },
         { title: 'github', url: 'https://github.com/wiener234' }
     ]
